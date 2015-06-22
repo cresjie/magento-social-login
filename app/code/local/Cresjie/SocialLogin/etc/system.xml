@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+
+<config>
+    <tabs>
+        <sociallogin translate="label">
+            <label>Cres Extensions</label>
+            <sort_order>1000</sort_order>
+            <class>cresjie-extensions</class>
+        </sociallogin>
+    </tabs>
+
+    <sections>
+        <sociallogin>
+            <label>Social Login</label>
+            <tab>sociallogin</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>9999</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            
+            <groups>
+                <google>
+                    <label>Google</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <client_id translate="label">
+                            <label>Client ID</label>
+                            <frontend_type>text</frontend_type>
+                            <comment>Google Client ID</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </client_id>
+                        <client_secret>
+                            <label>Client Secret</label>
+                            <frontend_type>password</frontend_type>
+                            <comment>Google Client Secret</comment>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </client_secret>
+                    </fields>
+                </google>
+                <facebook>
+                    <label>Facebook</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <client_id translate="label">
+                            <label>Client ID</label>
+                            <frontend_type>text</frontend_type>
+                            <comment> Facebook Client ID</comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </client_id>
+                        <client_secret>
+                            <label>Client Secret</label>
+                            <frontend_type>password</frontend_type>
+                            <comment>Facebook Client Secret</comment>
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </client_secret>
+
+                    </fields>
+                </facebook>
+
+            </groups>
+        </sociallogin>
+
+    </sections>
+
+</config>
