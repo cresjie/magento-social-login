@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<config>
+	<modules>
+		<Cresjie_SocialLogin>
+			<version>1.0</version>
+		</Cresjie_SocialLogin>
+	</modules>
+
+
+	<global>
+		<models>
+			<sociallogin>
+				<class>Cresjie_SocialLogin_Model</class>
+			</sociallogin>
+		</models>
+
+		<blocks>
+			<sociallogin>
+				<class>Cresjie_SocialoLogin_Block</class>
+			</sociallogin>
+		</blocks>
+		<helpers>
+			<sociallogin>
+				<class>Cresjie_SocialLogin_Helper</class>
+			</socallogin>
+		</helpers>
+	</global>
+
+</config>
