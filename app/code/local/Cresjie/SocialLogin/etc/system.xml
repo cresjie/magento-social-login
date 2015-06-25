@@ -26,6 +26,7 @@
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
+                    <sort_order>20</sort_order>
 
                     <fields>
                         <client_id translate="label">
@@ -46,6 +47,16 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </client_secret>
+                        <redirect_uri>
+                            <label>Redirect URI</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_class>disabled</frontend_class>
+                            <comment>Programmatically generated. Don't edit</comment>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </redirect_uri>
                     </fields>
                 </google>
                 <facebook>
@@ -53,6 +64,7 @@
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
+                     <sort_order>25</sort_order>
 
                     <fields>
                         <client_id translate="label">
@@ -83,3 +95,112 @@
     </sections>
 
 </config>
+<!--
+<config>
+    <tabs>
+        <sociallogin translate="label">
+            <label>Cres Extension</label>
+            <sort_order>1000</sort_order>
+            <class>cresjie-extensions</class>
+        </sociallogin>
+    </tabs>
+    <sections>
+        <sociallogin>
+            <label>Social Login</label>
+            <tab>sociallogin</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>9999</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <logger translate="label">
+                    <label>Mirasvit Extensions logging</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>0</show_in_store>
+                            <show_in_website>0</show_in_website>
+                            <sort_order>90</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </enabled>
+                        <cron translate="label">
+                            <label>Log Cron</label>
+                            <frontend_type>select</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>0</show_in_store>
+                            <show_in_website>0</show_in_website>
+                            <sort_order>95</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </cron>
+                        <developer_ip translate="label">
+                            <label>Developer IP</label>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_store>0</show_in_store>
+                            <show_in_website>0</show_in_website>
+                            <sort_order>100</sort_order>
+                        </developer_ip>
+                    </fields>
+                </logger>
+            </groups>
+        </sociallogin>
+        
+    </sections>
+</config>
+
+-->
+
+<!--
+<config>
+    <tabs>
+        <sociallogin module="sociallogin" translate="label">
+            <label>Cresjie Extension</label>
+            <sort_order>100</sort_order>
+        </sociallogin>
+    </tabs>
+
+    <sections>
+        <sociallogin translate="label" module="sociallogin">
+            <label>Social Login</label>
+            <tab>sociallogin</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>9999</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+
+            <groups>
+                <general translate="label">
+                    <label>Facebook Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    
+                    <fields>
+                        <facebook_input>
+                            <label>My Input Field: </label>
+                            <comment>My Comment</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </facebook_input>
+
+                    </fields>
+                </general>
+
+            </groups>
+        </sociallogin>
+    </sections>
+</config>
+-->

@@ -7,7 +7,18 @@
 		</Cresjie_SocialLogin>
 	</modules>
 
-
+	<frontend>
+		<routers>
+			<sociallogin>
+				<use>standard</use>
+				<args>
+					<module>Cresjie_SocialLogin</module>
+					<frontName>cresjie</frontName>
+				</args>
+			</sociallogin>
+		</routers>
+	</frontend>
+	
 	<global>
 		<models>
 			<sociallogin>
@@ -17,14 +28,25 @@
 
 		<blocks>
 			<sociallogin>
-				<class>Cresjie_SocialoLogin_Block</class>
+				<class>Cresjie_SocialLogin_Block</class>
 			</sociallogin>
 		</blocks>
 		<helpers>
 			<sociallogin>
 				<class>Cresjie_SocialLogin_Helper</class>
-			</socallogin>
+			</sociallogin>
+			
 		</helpers>
+
+		 <resources>
+            <sociallogin_setup>
+                <setup>
+                    <module>Cresjie_SocialLogin</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </sociallogin_setup>
+        </resources>
+
 	</global>
 
 </config>
